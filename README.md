@@ -77,7 +77,7 @@ Figura 8 - Atualização do emprestimo com id 2.
 
 Para deletar um emprestimo deve ser utilizado a request Deletar_Emprestimo, nesse exemplo está deletando o id 3 (http://localhost:8080/cliente/emprestimo/exemplo/deletar/3).
 
-Figura 9 - Consultar o emprestimo de id 3.
+Figura 9 - Deletar o emprestimo de id 3.
 
 ![postman_deletar](imagens/postman_deletar.png)
 
@@ -87,3 +87,6 @@ Figura 10 - Consulta do emprestimo de id 1.
 
 ![postman_consultar](imagens/postman_consultar_id.png)
 
+Seguindo todos os passos e os arquivos fornecidos o resulta pode ser observado na figura a seguir, onde pode ser observado a alteração da data de entrega no emprestimo de id igual a 2 (atualização realizada conforme o figura 8) e a apresentação apenas dos ID's 1 e 2 (o terceiro foi deletado como mostrado no figura 9) .
+
+![resultado](imagens/resultado.png)
