@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "0981d59c-b184-47d7-ba7d-42ad0da3068d",
+		"name": "Java_Biblioteca_Exemplo_Aplicado_Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26484708",
+		"_collection_link": "https://solar-spaceship-348683.postman.co/workspace/70e3bb73-5f9d-416d-8ba0-a459e781389c/collection/26484708-0981d59c-b184-47d7-ba7d-42ad0da3068d?action=share&source=collection_link&creator=26484708"
+	},
+	"item": [
+		{
+			"name": "Salvar_Tabela_Emprestimos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cliente/emprestimo/exemplo/criar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"emprestimo",
+						"exemplo",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar_Emprestimo_por_ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dtemprestimo\": \"15/10/2023\",\r\n    \"dtdevolucao\": \"16/10/2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cliente/emprestimo/exemplo/atualizar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"emprestimo",
+						"exemplo",
+						"atualizar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar_Emprestimo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dtemprestimo\": \"15/10/2023\",\r\n    \"dtdevolucao\": \"16/10/2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cliente/emprestimo/exemplo/deletar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"emprestimo",
+						"exemplo",
+						"deletar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar_Emprestimo_por_ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dtemprestimo\": \"15/10/2023\",\r\n    \"dtdevolucao\": \"16/10/2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cliente/emprestimo/exemplo/consultar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"emprestimo",
+						"exemplo",
+						"consultar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar_Tabela_Emprestimos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dtemprestimo\": \"15/10/2023\",\r\n    \"dtdevolucao\": \"16/10/2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cliente/emprestimo/exemplo/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"emprestimo",
+						"exemplo",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

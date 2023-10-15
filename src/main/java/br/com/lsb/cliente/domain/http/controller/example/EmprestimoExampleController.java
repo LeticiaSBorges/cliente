@@ -32,7 +32,7 @@ import org.springframework.web.server.ResponseStatusException;
  */
 @RestController
 @RequestMapping("/cliente/emprestimo/exemplo")
-public class EmprestimoExampleController {
+    public class EmprestimoExampleController {
     @Autowired
     private EmprestimoService emprestimoService;
     @Autowired
