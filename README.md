@@ -69,10 +69,21 @@ no qual foi alterado a data de devolução com as seguintes informações:
     
 }
 
-A figura 8 apresenta detalhamente o que foi realizado.
+A figura 8 apresenta detalhamente do que foi realizado.
 
 Figura 8 - Atualização do emprestimo com id 2.
 
 ![postman_atualizar](imagens/postman_atualizar.png)
 
+Para deletar um emprestimo deve ser utilizado a request Deletar_Emprestimo, nesse exemplo está deletando o id 3 (http://localhost:8080/cliente/emprestimo/exemplo/deletar/3).
+
+Figura 9 - Consultar o emprestimo de id 3.
+
+![postman_deletar](imagens/postman_deletar.png)
+
+E por fim, para consultar um emprestimo por id deve ser utilizado a request Consultar_Emprestimo_por_ID, nesse exemplo está retornando o id 1 (http://localhost:8080/cliente/emprestimo/exemplo/consultar/1).
+
+Figura 10 - Consulta do emprestimo de id 1.
+
+![postman_consultar](imagens/postman_consultar_id.png)
 
