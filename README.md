@@ -6,7 +6,7 @@ O primeiro passo deste trabalho foi baixar os bibliotecas Spring Data JPA, Valid
 
 Figura 1 - Start Spring.
 
-![start_spring](images/start_spring_atualizado.png)
+![start_spring](imagens/start_spring_atualizado.png)
 
 Spring Framework e é usada para simplificar o desenvolvimento de aplicativos Java baseados em persistência de dados. Ela combina o Spring Data e o Java Persistence API (JPA) para fornecer uma maneira mais fácil e produtiva de acessar e manipular bancos de dados relacionais em aplicativos Java.
 
@@ -20,13 +20,13 @@ Os tabelas foram criadas com com base no relacionamento apresnetado na imagem ab
 
 Figura 2 - Tabelas Aluno, Publicação e Emprestimo.
 
-![relacionamento_biblioteca](images/relacionamento_biblioteca.drawio.png)
+![relacionamento_biblioteca](imagens/relacionamento_biblioteca.drawio.png)
 
 Dessa forma foi criado o arquivo data.sql, no qual cria todas as tabelas que estão sendo utilizadas no projeto, aluno, publicacao e emprestimo.
 
 Figura 3 - Scrip de criação das tabelas em SQL no arquivo data.sql.
 
-![data_sql](images/data_sql.png)
+![data_sql](imagens/data_sql.png)
 
 Posteriormente foi criado a classes com mapeamento em JPA para aluno, publicação e emprestimo (localizado no diretório entity). Foi criado também a classe DAO para aluno, publiação e emprestimo. Foi necessário criar a classe DAO para alunos e publicação, pois para realizar o emprestimo, deve ser realizado o cadastro o aluno e a publicação.
 
@@ -34,23 +34,45 @@ O exemplo de teste de funcionamento da classe DAO de emprestimo foi realizado no
 
 Figura 4 - Script da classe EmprestimoExampleController.
 
-![EmprestimoExampleController](images/EmprestimoExampleController.png)
+![EmprestimoExampleController](imagens/EmprestimoExampleController.png)
 
 Veja o retorno dos dados salvas pelo arquivo EmprestimoExampleController no Postman na request Salvar_Tabela_Emprestimos. Resaltando, a collection está disponivel na pasta "collection_postman", com as devidas configurações.
 
 Figura 5 - Retorno dos dados salvos pela classe EmprestimoExampleController no Postman.
 
-![postman_salvar](images/postman_salvar.png)
+![postman_salvar](imagens/postman_salvar.png)
 
 Para ver o retorno no banco H2, deve ser acessado o link <http://localhost:8080/console-h2>. A figura 6 apresenta os retornos nas tabelas.
 
 Figura 6 - Retorno das tabelas no H2.
 
-![h2_aluno](images/h2_aluno.png)
+![h2_aluno](imagens/h2_aluno.png)
 
-![h2_aluno](images/h2_publicacao.png)
+![h2_publicacao](imagens/h2_publicacao.png)
 
-![h2_aluno](images/h2_emprestimo.png)
+![h2_emprestimo](imagens/h2_emprestimo.png)
 
+Para lista  tabela no postman deve ser utilizada a request Consultar_Tabela_Emprestimos. Veja a figura a seguir.
+
+Figura 7 - Retorno de todos os dados salvos na tabela Emprestimo.
+
+![postman_listar_tabela](imagens/postman_listar_tabela.png)
+
+A atualização de um emprestimo, deve utilizado o request Atualizar_Emprestimo_por_ID, e selecionar o id a ser atualizado, nesse casos o id 2 (http://localhost:8080/cliente/emprestimo/exemplo/atualizar/2),
+no qual foi alterado a data de devolução com as seguintes informações:
+
+{
+
+    "dtemprestimo": "15/10/2023",
+    
+    "dtdevolucao": "16/10/2023"
+    
+}
+
+A figura 8 apresenta detalhamente o que foi realizado.
+
+Figura 8 - Atualização do emprestimo com id 2.
+
+![postman_atualizar](imagens/postman_atualizar.png)
 
 
