@@ -136,4 +136,10 @@ public class EmprestimoExampleController {
         return emprestimoService.buscarPorId(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Empréstimo não encontrado."));
     }
+    
+    @GetMapping("/listar")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Emprestimo> listarEmprestimos() {
+        return emprestimoService.listaEmprestimo();
+    }
 }
