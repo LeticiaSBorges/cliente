@@ -54,9 +54,25 @@ Figura 6 - Retorno das tabelas no H2.
 
 Para lista  tabela no postman deve ser utilizada a request Consultar_Tabela_Emprestimos. Veja a figura a seguir.
 
-Figura 5 - Retorno de todos os dados salvos na tabela Emprestimo.
+Figura 7 - Retorno de todos os dados salvos na tabela Emprestimo.
 
 ![postman_listar_tabela](imagens/postman_listar_tabela.png)
 
+A atualização de um emprestimo, deve utilizado o request Atualizar_Emprestimo_por_ID, e selecionar o id a ser atualizado, nesse casos o id 2 (http://localhost:8080/cliente/emprestimo/exemplo/atualizar/2),
+no qual foi alterado a data de devolução com as seguintes informações:
+
+{
+
+    "dtemprestimo": "15/10/2023",
+    
+    "dtdevolucao": "16/10/2023"
+    
+}
+
+A figura 8 apresenta detalhamente o que foi realizado.
+
+Figura 8 - Atualização do emprestimo com id 2.
+
+![postman_atualizar](imagens/postman_atualizar.png)
 
 
