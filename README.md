@@ -24,7 +24,7 @@ Figura 2 - Tabelas Aluno, Publicação e Emprestimo.
 
 Dessa forma foi criado o arquivo data.sql, no qual cria todas as tabelas que estão sendo utilizadas no projeto, aluno, publicacao e emprestimo.
 
-Figura 3 - Scrip de criação das tabelas em SQL no arquivo data.sql.
+Figura 3 - Script de criação das tabelas em SQL no arquivo data.sql.
 
 ![data_sql](imagens/data_sql.png)
 
@@ -35,6 +35,8 @@ O exemplo de teste de funcionamento da classe DAO de emprestimo foi realizado no
 Figura 4 - Script da classe EmprestimoExampleController.
 
 ![EmprestimoExampleController](imagens/EmprestimoExampleController.png)
+
+## Passos para utilização deste projeto
 
 Veja o retorno dos dados salvas pelo arquivo EmprestimoExampleController no Postman na request Salvar_Tabela_Emprestimos. Resaltando, a collection está disponivel na pasta "collection_postman", com as devidas configurações.
 
