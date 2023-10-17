@@ -94,23 +94,21 @@ Seguindo todos os passos e os arquivos fornecidos o resulta pode ser observado n
 
 ## Passos para utilização deste projeto
 
-1º Rode o arquivo ClienteApplication.java
+**1º passo:** Rode o arquivo ClienteApplication.java
 
 ![ClienteApplication](imagens/ClienteApplication.png)
 
-2º Importe a collection "Java_Biblioteca_Exemplo_Aplicado_Java.postman_collection.json" no postaman, localizado na pasta "collection-postman".
+**2º passo:** Importe a collection "Java_Biblioteca_Exemplo_Aplicado_Java.postman_collection.json" no postaman, localizado na pasta "collection-postman".
 
 ![postman_1](imagens/postman_1.png)
 
 ![postman_2](imagens/postman_2.png)
 
-3º Selecione a request Salvar_Tabela_Emprestimos e clique em 'Send'.
+**3º passo:** Selecione a request Salvar_Tabela_Emprestimos e clique em 'Send'.
 
 ![postman_3](imagens/postman_3.png)
 
-4º Abra o link  <http://localhost:8080/console-h2> para visualizar no banco H2.
-
-![postman_3](imagens/postman_3.png)
+**4º passo:** Abra o link  <http://localhost:8080/console-h2> para visualizar no banco H2.
 
 ![h2_aluno](imagens/h2_aluno.png)
 
@@ -118,16 +116,18 @@ Seguindo todos os passos e os arquivos fornecidos o resulta pode ser observado n
 
 ![h2_emprestimo](imagens/h2_emprestimo.png)
 
-5º Para atulizar a tabela emprestimo deve ser utilizado a request "Atualizar_Emprestimo_por_ID" da collection "Java_Biblioteca_Exemplo_Aplicado_Java.postman_collection.json" importada no passo 2. Esta request já possui um exemplo de alteração do empprestimo do id 2.
+**5º passo:** Para atulizar a tabela emprestimo deve ser utilizado a request "Atualizar_Emprestimo_por_ID" da collection "Java_Biblioteca_Exemplo_Aplicado_Java.postman_collection.json" importada no passo 2. Esta request já possui um exemplo de alteração do empprestimo do id 2.
 
 ![postman_atualizar](imagens/postman_atualizar.png)
 
-6º Para deletar um emprestimo, utilize a request "Deletar_Emprestimo", nela já possui um exemplo do emprestimo id 3 deletado.
+**6º passo:** Para deletar um emprestimo, utilize a request "Deletar_Emprestimo", nela já possui um exemplo do emprestimo id 3 deletado.
 
 ![postman_deletar](imagens/postman_deletar.png)
 
-7º Para lista todos os dados da tabela emprestimo deve ser utilizado a request "Consultar_Tabela_Emprestimos" e para lista apenas um emprestimo por id dever ser utilizado "Consultar_Emprestimo_por_ID" (nesta request está utilizando o id 1).
+**7º passo:** Para lista todos os dados da tabela emprestimo deve ser utilizado a request "Consultar_Tabela_Emprestimos" e para lista apenas um emprestimo por id dever ser utilizado "Consultar_Emprestimo_por_ID" (nesta request está utilizando o id 1).
 
 ![postman_listar_tabela](imagens/postman_listar_tabela.png)
 
 ![postman_consultar](imagens/postman_consultar_id.png)
+
+## Explicação de cada arquivo
