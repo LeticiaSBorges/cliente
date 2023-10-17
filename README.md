@@ -43,7 +43,7 @@ Figura 5 - Retorno dos dados salvos pela classe EmprestimoExampleController no P
 
 ![postman_salvar](imagens/postman_salvar.png)
 
-Para ver o retorno no banco H2, deve ser acessado o link <http://localhost:8080/console-h2>. A figura 6 apresenta os retornos nas tabelas.
+Para ver o retorno no banco H2, deve ser acessado o link <http://localhost:8080/console-h2> (pode ser visualizado no arquvio "link_acesso.txt"). A figura 6 apresenta os retornos nas tabelas.
 
 Figura 6 - Retorno das tabelas no H2.
 
