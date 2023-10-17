@@ -24,7 +24,7 @@ Figura 2 - Tabelas Aluno, Publicação e Emprestimo.
 
 Dessa forma foi criado o arquivo data.sql, no qual cria todas as tabelas que estão sendo utilizadas no projeto, aluno, publicacao e emprestimo.
 
-Figura 3 - Scrip de criação das tabelas em SQL no arquivo data.sql.
+Figura 3 - Script de criação das tabelas em SQL no arquivo data.sql.
 
 ![data_sql](imagens/data_sql.png)
 
@@ -35,6 +35,7 @@ O exemplo de teste de funcionamento da classe DAO de emprestimo foi realizado no
 Figura 4 - Script da classe EmprestimoExampleController.
 
 ![EmprestimoExampleController](imagens/EmprestimoExampleController.png)
+
 
 Veja o retorno dos dados salvas pelo arquivo EmprestimoExampleController no Postman na request Salvar_Tabela_Emprestimos. Resaltando, a collection está disponivel na pasta "collection_postman", com as devidas configurações.
 
@@ -90,3 +91,43 @@ Figura 10 - Consulta do emprestimo de id 1.
 Seguindo todos os passos e os arquivos fornecidos o resulta pode ser observado na figura a seguir, onde pode ser observado a alteração da data de entrega no emprestimo de id igual a 2 (atualização realizada conforme o figura 8) e a apresentação apenas dos ID's 1 e 2 (o terceiro foi deletado como mostrado no figura 9) .
 
 ![resultado](imagens/resultado.png)
+
+## Passos para utilização deste projeto
+
+1º Rode o arquivo ClienteApplication.java
+
+![ClienteApplication](imagens/ClienteApplication.png)
+
+2º Importe a collection "Java_Biblioteca_Exemplo_Aplicado_Java.postman_collection.json" no postaman, localizado na pasta "collection-postman".
+
+![postman_1](imagens/postman_1.png)
+
+![postman_2](imagens/postman_2.png)
+
+3º Selecione a request Salvar_Tabela_Emprestimos e clique em 'Send'.
+
+![postman_3](imagens/postman_3.png)
+
+4º Abra o link  <http://localhost:8080/console-h2> para visualizar no banco H2.
+
+![postman_3](imagens/postman_3.png)
+
+![h2_aluno](imagens/h2_aluno.png)
+
+![h2_publicacao](imagens/h2_publicacao.png)
+
+![h2_emprestimo](imagens/h2_emprestimo.png)
+
+5º Para atulizar a tabela emprestimo deve ser utilizado a request "Atualizar_Emprestimo_por_ID" da collection "Java_Biblioteca_Exemplo_Aplicado_Java.postman_collection.json" importada no passo 2. Esta request já possui um exemplo de alteração do empprestimo do id 2.
+
+![postman_atualizar](imagens/postman_atualizar.png)
+
+6º Para deletar um emprestimo, utilize a request "Deletar_Emprestimo", nela já possui um exemplo do emprestimo id 3 deletado.
+
+![postman_deletar](imagens/postman_deletar.png)
+
+7º Para lista todos os dados da tabela emprestimo deve ser utilizado a request "Consultar_Tabela_Emprestimos" e para lista apenas um emprestimo por id dever ser utilizado "Consultar_Emprestimo_por_ID" (nesta request está utilizando o id 1).
+
+![postman_listar_tabela](imagens/postman_listar_tabela.png)
+
+![postman_consultar](imagens/postman_consultar_id.png)
